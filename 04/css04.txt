@@ -1,0 +1,215 @@
+        a {text-decoration: none;}
+        body,h1,h2 {font-family: "Raleway", sans-serif}
+        body {background-color: rgb(241, 222, 226);}
+        
+
+
+        #header {
+            background: url("./img/header.jpg") no-repeat center/ cover;
+            filter: grayscale(0.5);
+            width: 100%;
+            height: 580px;
+            position: relative;
+            text-align: center;
+        }
+        #header .text {
+            position: absolute;
+            top: 180px;
+            left: 35%;
+            color: white;
+            letter-spacing: 0.2em;
+        }
+        #header .text h1 {font-size: 62px;}
+        
+
+
+        #nav {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            padding: 15px 150px;
+            box-sizing: border-box;
+            z-index: 9999;
+            background-color: rgba(255,255,255,0.7);
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+        }
+
+        #jj {
+            text-align: center;
+            margin-top: 80px;
+        }
+        #jj h1 {
+            color: rgb(120,120,120);
+            margin-bottom: 50px;
+            font-weight: bold;
+        }
+        #jj img {
+            filter: grayscale(0.7);
+            margin-bottom: 50px;
+            width: 76%;
+            border-radius: 5px;
+        }
+        #jj p {
+            margin: 0 12%;
+            text-align: justify;
+            line-height: 1.8em;
+            font-style: italic;
+        }
+        #jj p:last-child {
+            margin: 30px auto 70px;
+            text-align: center;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 16px;
+            font-style: normal;
+        }
+        #jj p:last-child:hover {
+            background-color: #aaa;
+            color: black;
+        }
+
+
+        #invite {
+            background: url("./img/flo.jpg") no-repeat center/ cover;
+            width: 100%;
+            height: 580px;
+            position: relative;
+        }
+        #invite .inv_text {
+            position: absolute;
+            top: 200px;
+            left: 33%;
+            color: white;
+            letter-spacing: 0.1em;
+            text-align: center;
+        }
+        #invite .inv_text h1 {
+            font-size: 60px;
+            margin-bottom: 40px;
+        }
+
+        #wed {
+            text-align: center;
+        }
+        #wed h1 {
+            color: rgb(120,120,120);
+            margin: 80px auto;
+            text-align: center;
+            font-weight: bold;
+        }
+        #wed img {
+            filter: grayscale(0.7);
+            margin: 0 80px 60px;
+            width: 76%;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #wed .info {
+            display: inline-block;
+            margin: 0 140px;
+            margin-bottom: 60px;
+        }
+        #wed .info p {
+            margin-bottom: 20px;
+        }
+
+
+        #rsvp {
+            background-color: rgb(242, 208, 216);
+            text-align: center;
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        #rsvp .rsvp_ct {
+            position: absolute;
+            top: 20px;
+            left: 30%;
+            height: 20%;
+            letter-spacing: 0.2em;
+        }
+        #rsvp .rsvp_ct h1 {
+            color: black;
+            font-weight: normal;
+        }
+        #rsvp .rsvp_ct p {
+            position: absolute;
+            top: 160px;
+            left: 13%;
+        }
+        #rsvp .rsvp_ct button {
+            width: 180px;
+            height: 60px;
+            border: 0;
+            border-radius: 5px;
+            background-color: rgb(255, 128, 128);
+            color: white;
+            font-size: 22px;
+        }
+        #rsvp .rsvp_ct button:hover {
+            background-color: #aaa;
+            color: black;
+        }
+        
+
+        #footer {
+            background-color: black;
+            padding: 35px 0;
+            box-sizing: border-box;
+            color: white;
+            margin-bottom: 20px;
+        }
+        #footer a {
+            text-decoration: underline;
+        }
+
+        #rsvp_fm {
+            background-color: white;
+            text-align: center;
+            padding: 30px 0 20px;
+            box-sizing: border-box;
+            width: 500px;
+            height: 320px;
+            position: relative;
+        }
+        #rsvp_fm h1 {
+            margin-bottom: 20px;
+            letter-spacing: 0.1em;
+        }
+        #rsvp_fm input {
+            margin: 20px 0;
+            width: 90%;
+        }
+        #rsvp_fm p:last-of-type {
+            font-style: italic;
+        }
+        #rsvp_fm button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 45%;
+            border: 0;
+            height: 40px;
+            float: left;
+            color: white;
+        }
+        #rsvp_fm #yes {
+            margin-left: 5%;
+            background-color: green;
+        }
+        #rsvp_fm #no {
+            background-color: red;
+        }
+
+        #form {
+            display: hidden;
+            position: fixed;
+            justify-content: center;
+            border-radius: 10px;
+        }
