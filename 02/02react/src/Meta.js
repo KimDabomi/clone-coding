@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{memo} from 'react'
 import {Helmet,HelmetProvider} from 'react-helmet-async';
 
-const Meta = (props) => {
+const Meta = memo((props) => {
   return (
     <HelmetProvider>
       <Helmet>
@@ -29,7 +29,7 @@ const Meta = (props) => {
       </Helmet>
     </HelmetProvider>
   );
-};
+});
 
 Meta.defaultProps = {
   title: 'React Example',

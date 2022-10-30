@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import team01 from '../../assets/img/team2.jpg';
 import team02 from '../../assets/img/team1.jpg';
@@ -120,7 +120,7 @@ const teamList = [
   {img: team04, name: 'Dan Star', job: 'Architect'}
 ];
 
-const About = () => {
+const About = memo(() => {
   return (
     <AboutContainer>
       <div>
@@ -143,6 +143,6 @@ const About = () => {
       </div>
     </AboutContainer>
   );
-};
+});
 
 export default About;

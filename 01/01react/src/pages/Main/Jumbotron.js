@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import mq from '../../MediaQuery';
 import JbrImg from '../../assets/img/top.jpg';
@@ -35,7 +35,7 @@ const JumbotronContainer = styled.div`
 `;
 
 
-const Main = () => {
+const Main = memo(() => {
   return (
     <JumbotronContainer>
         <div>
@@ -46,6 +46,6 @@ const Main = () => {
         </div>
     </JumbotronContainer>
   );
-};
+});
 
 export default Main;

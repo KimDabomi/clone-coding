@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import Jumbotron from './Jumbotron';
 import About from './About';
@@ -10,7 +10,7 @@ const MainContainer = styled.section`
 `;
 
 
-const Main = () => {
+const Main = memo(() => {
   return (
     <MainContainer>
         <Jumbotron />
@@ -21,6 +21,6 @@ const Main = () => {
         <Contact />
     </MainContainer>
   );
-};
+});
 
 export default Main;

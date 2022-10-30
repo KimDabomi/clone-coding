@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import mq from '../../MediaQuery';
 
@@ -53,7 +53,7 @@ const ContactContainer = styled.div`
     }
     
 `;
-const Contact = () => {
+const Contact = memo(() => {
   return (
         <ContactContainer>
             <div>
@@ -80,6 +80,6 @@ const Contact = () => {
             </div>
         </ContactContainer>
   );
-};
+});
 
 export default Contact;

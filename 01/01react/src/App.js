@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import {Routes,Route} from 'react-router-dom';
 import Footer from './common/Footer';
 import Navbar from './common/Navbar';
@@ -7,7 +7,7 @@ import About from './pages/Main/About';
 import Menu from './pages/Main/Menu';
 import Contact from './pages/Main/Contact';
 
-const App = () => {
+const App = memo(() => {
   return (
     <div>
       <Navbar />
@@ -20,6 +20,6 @@ const App = () => {
       <Footer />
     </div>
   );
-};
+});
 
 export default App;

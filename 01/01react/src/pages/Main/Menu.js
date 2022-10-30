@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import MenuImg from '../../assets/img/menu.jpg';
 import mq from '../../MediaQuery';
@@ -58,7 +58,7 @@ const MenuContainer = styled.div`
         }
     `}
 `;
-const Menu = () => {
+const Menu = memo(() => {
   return (
         <MenuContainer>
             <div>
@@ -84,6 +84,6 @@ const Menu = () => {
             </div>
         </MenuContainer>
   );
-};
+});
 
 export default Menu;

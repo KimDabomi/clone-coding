@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 import AboutImg from '../../assets/img/about.jpg';
 import mq from '../../MediaQuery';
@@ -82,7 +82,7 @@ const AboutContainer = styled.div`
     `}
     
 `;
-const About = () => {
+const About = memo(() => {
   return (
         <AboutContainer>
             <div>
@@ -98,6 +98,6 @@ const About = () => {
             </div>
         </AboutContainer>
   );
-};
+});
 
 export default About;

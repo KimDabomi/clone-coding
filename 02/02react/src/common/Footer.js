@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import styled from 'styled-components';
 
 const FooterContainer = styled.footer`
@@ -16,7 +16,7 @@ const FooterContainer = styled.footer`
   }  
 `;
 
-const Footer = () => {
+const Footer = memo(() => {
   return (
     <FooterContainer>
         <p>
@@ -24,6 +24,6 @@ const Footer = () => {
         </p>
     </FooterContainer>
   );
-};
+});
 
 export default Footer;
