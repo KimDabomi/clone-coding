@@ -454,7 +454,7 @@ footer .footer p a {
   text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
 
-@media screen and (min-width:601px) and (max-width:1024px) {
+@media screen and (min-width:601px) and (max-width:900px) {
   .nav {
       display: none;
   }
